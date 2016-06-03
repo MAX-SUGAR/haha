@@ -1,0 +1,111 @@
+1.让老式浏览器支持HTML5
+ 
+HTML5能为我们做的事儿很多，最为可口的就是语义化标签的应用，如果你已经在Chrome或者其他支持HTML5的浏览器上用过它的牛x，那这篇文章对你一定有用，因为现在你也可以在IE上用到HTML5。
+ 
+第一种方法：使用Google的html5shiv包（推荐）
+首先你要引用下面是引用Google的html5.js文件，好处就不说了：
+  
+1 <!--[if IE]>
+2 <script src=”http://html5shiv.googlecode.com/svn/trunk/html5.js”></script>
+3 < ![endif]-->
+ 
+
+ 
+将上代码复制到head部分，记住一定要是head部分（因为IE必须在元素解析前知道这个元素，所以这个js文件不能在其他位置调用，否则失效）
+
+主要是让这些html5标签成块状，像div那样。好了，简单吧，一句话概括就是：引用html5.js  使html5标签成块状
+
+ 
+
+第二种方法：Coding JavaScript
+ 
+
+ 1 <!--[if lt IE9]> 
+ 2 <script> 
+ 3    (function() {
+ 4      if (! 
+ 5      /*@cc_on!@*/
+ 6      0) return;
+ 7      var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+ 8      var i= e.length;
+ 9      while (i--){
+10          document.createElement(e[i])
+11      } 
+12 })() 
+13 </script>
+14 <![endif]-->
+
+ 
+
+ 
+但是不管使用以上哪种方法,都要初始化新标签的CSS.因为HTML5在默认情况下表现为内联元素，对这些元素进行布局我们需要利用CSS手工把它们转为块状元素方便布局
+
+ 
+
+1 /*html5*/
+2 article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+ 
+
+但是如果ie6/7/8 禁用脚本的用户,那么就变成了无样式的"白板"网页,我们该怎么解决呢?
+
+我们可以参照facebook的做法，即引导用户进入带有noscript标识的 “/?_fb_noscript=1”页面，用 html4 标签替换 html5 标签，这要比为了保持兼容性而写大量 hack 的做法更轻便一些。
+
+复制代码
+1 <!--[if lte IE 8]> 
+2 <noscript>
+3      <style>.html5-wrappers{display:none!important;}</style>
+4      <div class="ie-noscript-warning">您的浏览器禁用了脚本，请<a href="">查看这里</a>来启用脚本!或者<a href="/?noscript=1">继续访问</a>.
+5      </div>
+6 </noscript>
+7 <![endif]-->
+
+
+ 这样可以引导用户开启脚本,或者直接跳转到HTML4标签设计的界面。
+
+ 
+
+2.让老式浏览器兼容CSS3（不完全兼容方案）
+
+到Internet Explorer 8为止，IE系列是不支持CSS3的。在IE中要做一些常用的效果如圆角、阴影，就需要用一些冗余而无意义的元素和图片来做出这些效果。在厌倦这些后，就 想着用更为简洁、直接有效、CSS3式的办法来解决这些问题。好在就算是饱受批评的Internet Explorer，其本身也是足够强大的。IE特有的技术可以很好的实现一些CSS3的效果。
+
+ 
+
+Opacity透明度
+元素的透明度在IE中可以很方便的用滤镜来实现。
+
+1 background-color:green;
+2 opacity: .4;
+3 filter:progid:DXImageTransform.Microsoft.alpha(opacity=40);
+这里半透明区域
+opacity: .4;
+
+filter:alpha(opacity=40);
+
+ 
+
+border-radius圆角/Box Shadow盒阴影/Text Shadow文字阴影
+
+在IE中可以利用Vector Markup Language (VML)和javascript来实现这些效果，参见IE-CSS3，在引用了一个HTC文件后，在IE浏览器中就可以使用这三种CSS3属性了。
+
+
+1 -moz-border-radius: 15px; /* Firefox */
+2 -webkit-border-radius: 15px; /* Safari 、Chrome */
+3 border-radius: 15px; /* Opera 10.5+, IE6+ 使用 IE-CSS3*/
+4 -moz-box-shadow: 5px 5px 5px #000; /* Firefox */
+5 -webkit-box-shadow: 5px 5px 5px #000; /* Safari、Chrome */
+6 box-shadow: 5px 5px 50px #000; /* Opera 10.5+，IE6+ 使用 IE-CSS3 */
+7 behavior: url(ie-css3.htc); /*引用ie-css3.htc */
+
+实际上，在IE中有自己的滤镜来实现阴影(shadow)和投影(drop-shadow)效果的 
+
+shadow会产生连续、渐变的阴影
+
+1 filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=145, Strength=10);
+drop-shadow产生的阴影没有明暗变化
+
+ 
+
+1 filter:progid:DXImageTransform.Microsoft.DropShadow(Color="#6699CC",OffX="5",OffY="5",Positive="1");
+ 
+
+滤镜似乎和现有的htc脚本有冲突，或者可以称之为特性：两者同时在一个元素上启用的时候，滤镜效果会转移到其子元素上
