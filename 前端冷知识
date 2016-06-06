@@ -1,1 +1,25 @@
-http://www.cnblogs.com/Wayou/p/things_you_dont_know_about_frontend.html
+文章链接：http://www.cnblogs.com/Wayou/p/things_you_dont_know_about_frontend.html
+
+
+垂直居中
+
+有好多次博主都有这样的需求，垂直居中显示某个DIV，我们知道CSS中天然有水平居中的样式text-align:center。唯独这个垂直居中无解。
+
+当然你可以将容器设置为display:table，然后将子元素也就是要垂直居中显示的元素设置为display:table-cell，然后加上vertical-align:middle来实现，但此种实现往往会因为display：table而破坏整体布局，那还不如直接用table标签了呢。
+
+下面这个样式利用了translate来巧妙实现了垂直居中样式，需IE9+。
+
+.center-vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+相比而言，水平居中要简单得多，像上面提到的text-align:center，经常用到的技巧还有margin:0 auto。但对于margin大法也只在子元素宽度小于容器宽度时管用，当子元素宽度大于容器宽度时此法失效。
+
+如法炮制，利用left和transform同样可实现水平居中，不过意义不大，毕竟text-align和margin差不多满足需求了。
+
+.center-horizontal {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); 
+}
