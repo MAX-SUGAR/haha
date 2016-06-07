@@ -1,0 +1,742 @@
+http://www.galaxywind.com/pages/APPFAQ/FAQC.html?v=1465292502740&
+
+FAQC.html内容：
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="Cache-Control" content="max-age=7200" />
+		<meta http-equiv="Expires" content="Mon, 20 Jul 2009 23:00:00 GMT" />
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+		<link rel="stylesheet" href="../APPFAQ/FAQ.css?v=0.1.5"/>
+		<script type="text/javascript" src="../../js/jQuery/jquery-1.11.1.min.js?v=0.1.5"></script>
+		<script type="text/javascript" src="../APPFAQ/FAQ.js?v=0.1.5"></script>
+	</head>
+
+	<body>
+		<div id="faq_main_ch">
+			<div id="faq_menu">
+				<a class="faq_menu" onclick="lookProbrem('app')">&gt;&nbsp;APP下载</a>
+				<a class="faq_menu" onclick="lookProbrem('search')">&gt;&nbsp;搜索设备</a>
+				<div id="wukongProbrem">
+					<a class="faq_menu" onclick="lookUpProbrem()">&gt;&nbsp;悟空系列</a>
+					<ul class="undis">
+						<li onclick="lookProbrem('wukongMin')">基础问题</li>
+						<li onclick="lookProbrem('wukongMax')">悟空i8增强版</li>
+					</ul>
+				</div>
+				<a class="faq_menu" onclick="lookProbrem('wuneng')">&gt;&nbsp;悟能WiFi调光灯</a>								
+				<a class="faq_menu" onclick="lookProbrem('wulian')">&gt;&nbsp;悟联S1智能主机</a>
+				<a class="faq_menu" onclick="lookProbrem('wuanMgt')">&gt;&nbsp;悟安智能门窗磁</a>
+				<a class="faq_menu" onclick="lookProbrem('wuanTem')">&gt;&nbsp;悟安S2智能温湿度感应器</a>
+				<a class="faq_menu" onclick="lookProbrem('wuanIfd')">&gt;&nbsp;悟安S2智能红外人体感应器</a>
+			</div>
+			<div id="faq_app_content" class="undis contentIfo">
+				<div class="faq_data">
+					<div class="header">
+						悟家APP支持的手机系统版本是多少？
+					</div>
+					<div class="section">
+						<p>答：最低手机版本要求IOS8.0，安卓Andrio2.3.3。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟家APP是否可以添加多种类型设备？
+					</div>
+					<div class="section">
+						<p>答：悟家APP可以添加标准版悟空、增强版悟空、智能WiFi调光灯、S1主机、智能安防等多种智能设备。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						我的家人可以控制我的智能设备吗？
+					</div>
+					<div class="section">
+						<p>答：可以的。APP主页点击右上角的“+”，选择已配置的设备，输入序列号和密码即可进入设备控制界面。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						请问APP上的上登陆密码和设备密码有什么不同？
+					</div>
+					<div class="section">
+						<p>答：</p>
+						<p>1.“登录密码”：您注册手机账号时设置的密码，可在一级设置菜单中修改。</p>
+						<p>2.“设备密码”：设备密码是WiFi设备的管理密码，默认为123456。</p>
+						<p>如果忘记设备密码,需要将设备恢复出厂设置,重新匹配。</p>
+						<p>如果忘记登录密码,可以点击手机账号登陆处”登陆遇到问题”,根据提示操作。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						手机使用数据流量的状态时，可以远程操控智能设备吗？
+					</div>
+					<div class="section">
+						<p>答：可以的，只要设备和手机网络通畅就可以远程操控的。</p>
+					</div>
+				</div>
+			</div>
+			<div id="faq_search_content" class="undis contentIfo">
+				<div class="faq_data">
+					<div class="header">
+						手机APP搜索设备时倒计时结束后搜索不到，怎么办？
+					</div>
+					<div class="section">
+						<p>答：请确保手机使用的WiFi 2.4G 的无线频段，并成功连接WiFi。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						若无线路由器更换WiFi密码或更换WiFi名称怎么办？
+					</div>
+					<div class="section">
+						<p>答：长按Reset键将智能设备恢复出厂配置，输入新的WiFi密码，重新进行匹配。</p>
+					</div>
+				</div>
+			</div>
+			<div id="faq_wukong_min_content" class="undis contentIfo">
+				<div class="faq_data">
+					<div class="header">
+						若遥控器匹配失败怎么办？
+					</div>
+					<div class="section">
+						<p>答：请先确保家中无线路由器上网正常，将遥控器对准悟空i8后再次尝试。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						请问悟空i8对安装位置有要求吗？
+					</div>
+					<div class="section">
+						<p>答：只要悟空i8与空调或电视间无明显遮挡，悟空i8都是可以控制的。建议您在距悟空i8 5米之内的距离使用，控制效果最佳。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						手机APP控制悟空i8时出现无法控制或状态相反？
+					</div>
+					<div class="section">
+						<p>答：请检查悟空i8与空调之间是否有明显遮挡，您也可以联系客服并提供序列号以及空调遥控器正反面照片。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟空i8如何恢复出厂配置？
+					</div>
+					<div class="section">
+						<p>答：通电状态下，长按Reset按钮直到指示灯红色快闪即可。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						更换空调后，无法控制新空调怎么办？
+					</div>
+					<div class="section">
+						<p>答：悟家APP登录悟空i8，菜单选择“匹配空调类型”，重新匹配遥控器。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						请问使用悟空i8定时开机后 ，空调是执行的什么状态呢？
+					</div>
+					<div class="section">
+						<p>答：定时开机生效后，空调会执行关机前的运行状态。</p>
+					</div>
+				</div>
+				<div id="q12" class="faq_data">
+					<div class="header">
+						请问智能开机的功能怎么使用呢？
+					</div>
+					<div class="section">
+						<p>答：开启智能开机后，当您在回家的途中，若探测室温低于17度时，触发开机制热24度 ；当探测室温高于30度时，触发开机制冷24度 ；若探测室温在17-30度时，悟空i8不会执行开机操作 。（注意：第一次开启智能开机时需要手机APP与悟空i8在同一局域网，以便准确定位；另外手机定位功能权限需要允许打开，否则功能失效 ）</p>
+						<p>1. 要求手机和悟空在同一局域网方可确定悟空的位置，从而智能开机开始生效</p>
+						<p>2. 若手机关闭定位功能，则功能失效</p>
+						<p>3. 若卸载客户端重新安装，位置信息也会清空，需要与悟空在同一局域网重新定位</p>
+					</div>
+				</div>
+				<div id="q13" class="faq_data">
+					<div class="header">
+						请问智能睡眠的功能怎么使用呢？
+					</div>
+					<div class="section">
+						<p>答：悟空i8内置传感器，会学习用户睡眠时光照环境 。在晚上22点到次日6点,当光照环境低于睡眠光照环境 就会触发智能睡眠。</p>
+						<p>
+							触发效果：
+						</p>
+						<p>1. 空调调整为低风 </p>
+						<p>2. 空调制热超过28度时，在客户设置温度基础上降低两度</p>
+						<p>3. 制冷低于20度时温度增加两度</p>
+					</div>
+				</div>
+				<div id="q14" class="faq_data">
+					<div class="header">
+						请问智能恒温的功能怎么使用呢？
+					</div>
+					<div class="section">
+						<p>答：智能恒温是指在设定时段内悟空i8会根据室内温度及用户设置温度范围对空调做出控制，使房间温度保持在恒定范围。如炎热的夏天，将恒温范围设定在26-28℃制冷模式。若恒温时段室温超过了28℃，悟空i8会自动让空调开启制冷，并保持室温在26-28℃范围内。当恒温时段结束，空调会自动变为待机状态。</p>
+						<p>温馨小提醒：</p>
+						<p>在智能恒温设定时段内，若用空调遥控器或APP遥控面板手动对空调进行控制，智能恒温功能会暂时失效，待下一重复时段恒温功能恢复正常。（恒温功能暂时失效时段，若重新开关一次恒温按钮，恒温功能立即生效） </p>
+					</div>
+				</div>
+				<div id="q15" class="faq_data">
+					<div class="header">
+						请问温度曲线的功能怎么使用呢？
+					</div>
+					<div class="section">
+						<p>答：温度曲线是指在设定时段内悟空i8按照设置的温度曲线让空调在整点时执行所设置的温度。当温度曲线时段结束后，空调会保持最后一个时间整点设置的状态。</p>
+						<p>温馨小提醒：</p>
+						<p>在温度曲线设定时段内，若用空调遥控器或APP遥控面板手动对空调进行控制，温度曲线功能会暂时失效，待下一重复时段曲线功能恢复正常。（曲线功能暂时失效时段，若重新开关一次温度曲线按钮，曲线功能立即生效）</p>
+					</div>
+				</div>
+			</div>
+			<div id="faq_wukong_max_content" class="undis contentIfo">
+				<div class="faq_data">
+					<div class="header">
+						悟空i8增强款液晶屏不同的颜色分别表示什么意思？
+					</div>
+					<div class="section">
+						<p>答：红色或蓝色跑马灯：等待一键配置；绿色或白色跑马灯：网络连接中。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟空i8增强款液晶显示屏上各图标分别是什么意思?
+					</div>
+					<div class="section">
+						<p>答：顶端曲型条状刻度表示室温与设置温度的温差；数字为室温与湿度百分比交替显示，带℃数字表示室温，带百分比数字表示湿度；底部扇状图表示WiFi信号。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						学习按键如何更改设置？
+					</div>
+					<div class="section">
+						<p>答：长按按键可更改按键名称、重新学习按键或删除该按键。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						我想使用App上没有的机顶盒或电视机控制按键怎么办？
+					</div>
+					<div class="section">
+						<p>答：点击机顶盒页面右上角的“添加图标”，可根据提示自主添加遥控器按键，按住屏幕往上滑可显示已添加的按键。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						一台悟空i8增强款可与多少台空调和机顶盒匹配？
+					</div>
+					<div class="section">
+						<p>答：悟空i8增强款与空调、机顶盒是一一对应的，只能分别匹配一台设备。</p>
+					</div>
+				</div>
+			</div>
+			<div id="faq_wuneng_content" class="undis contentIfo">
+				<div class="faq_data">
+					<div class="header">
+						悟能WiFi调光灯安装是否需要布线？
+					</div>
+					<div class="section">
+						<p>答：我们采取的是全无线方案，不需要布线，与WiFi连接就可以使用。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟能WiFi调光灯的额定功率是多少？待机功率有多少？
+					</div>
+					<div class="section">
+						<p>答：悟能WiFi调光灯额定功率6.5W，待机功率0.8W。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟能WiFi调光灯如何恢复出厂设置？
+					</div>
+					<div class="section">
+						<p>答:进入调光灯控制页面，点击右上角，选择恢复出厂设置。调光灯红绿蓝黄四种颜色各闪一次，即恢复出厂设置完成。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						如果家里互联网断网了，还可以用手机APP控制悟能WiFi调光灯吗？
+					</div>
+					<div class="section">
+						<p>答：互联网断网后，悟能WiFi调光灯状态不变。此时可以在局域网内控制悟能WiFi调光灯，不能远程控制。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						如果我每天晚上关闭路由器，会影响悟能WiFi调光灯的使用吗？
+					</div>
+					<div class="section">
+						<p>答：关闭路由器后，悟能WiFi调光灯蓝灯快闪5秒后保持之前配置状态。比如断网前设置为绿灯，断网后仍为绿灯。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						取色界面两个圆圈的图标是什么意思？
+					</div>
+					<div class="section">
+						<p>答：黑色的小圈是取色点，小圈所在位置即调光灯的颜色。黑色的大圈为放大镜。</p>
+					</div>
+				</div>				
+				<div class="faq_data">
+					<div class="header">
+						情景模式可以自定义吗？
+					</div>
+					<div class="section">
+						<p>答：目前还不支持自定义情景模式，相关功能我们还在积极拓展中。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						重置无线连接有什么作用？
+					</div>
+					<div class="section">
+						<p>答：当您需要更换调光灯配置WiFi时，需先将手机连入待切换WiFi。选择重置无线连接，输入新WiFi的密码，即可将调光灯的配置信息切换到新的WiFi下。</p>
+					</div>
+				</div>
+			</div>			
+			<div id="faq_wulian_content" class="undis contentIfo">
+				<div class="faq_data">
+					<div class="header">
+						智能主机对USB接口有要求吗？
+					</div>
+					<div class="section">
+						<p>答：智能主机可以插到任何USB接口（输出电压5V）进行供电。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						智能主机怎么恢复出厂设置？
+					</div>
+					<div class="section">
+						<p>答：通电状态下，长按设备上的Reset键直到智能主机上的指示灯变成蓝灯快闪状态，即完成恢复出厂</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟安系列智能安防设备必须配合智能主机使用吗？
+					</div>
+					<div class="section">
+						<p>答：是的,悟安系列智能安防设备需要和主机配合使用。如果还没有主机，可以先到我们京东或者天猫旗舰店购买。</p>
+					</div>
+				</div>	
+				<div class="faq_data">
+					<div class="header">
+						悟安系列智能安防设备是如何与智能主机连接的？
+					</div>
+					<div class="section">
+						<p>答：将智能主机连接WiFi以后，给智能安防设备正常供电，主机会自动扫描出智能安防设备，绑定后就可以使用了。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟安系列智能安防设备如果在一台主机上绑定过，想绑定到另外一台主机上可以吗？
+					</div>
+					<div class="section">
+						<p>答：可以,需要对智能安防设备进行恢复出厂，另外一台主机才可扫描到此设备，然后重新绑定。</p>
+					</div>
+				</div>				
+            </div>
+			<div id="faq_magnet_content" class="undis contentIfo">
+				<div class="faq_data">
+					<div class="header">
+						一台手机对门窗磁进行操作，其他手机会同步执行吗？
+					</div>
+					<div class="section">
+						<p>答：会同步，若一台手机对门窗磁进行布防、撤防以及解绑操作，其他手机会同步执行。</p>
+					</div>
+				</div>				
+				<div class="faq_data">
+					<div class="header">
+						悟安智能门窗磁使用什么电池？
+					</div>
+					<div class="section">
+						<p>答：悟安D2智能门窗磁使用的是2颗7号电池；悟安D3智能门窗磁使用一颗CR2032纽扣电磁。</p>
+					</div>
+				</div>	
+				<div class="faq_data">
+					<div class="header">
+						悟安智能门窗磁的主机和磁棒之间的感应距离有没有要求？
+					</div>
+					<div class="section">
+						<p>答：智能门窗磁的主机和磁棒之间的感应距离在10mm之内。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						智能门窗磁的”布防”和”撤防”介绍
+					</div>
+					<div class="section">
+						<p>答：若设置为布防，则门有开启、关闭或者抖动，APP会有推送报警通知；若设置为撤防，则门有开启、关闭或者抖动，APP不会有推送报警通知。。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						智能门窗磁怎么恢复出厂设置？
+					</div>
+					<div class="section">
+						<p>答：D2门窗磁：打开门窗磁后盖后，在上电状态下长按黑色按钮，等待红灯亮表示恢复出厂设置成功。</p>
+						<p>D3门窗磁：请使用包装附带的针，插入Reset孔4秒以上直到设备红灯亮起。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						将智能门窗磁解绑后，怎么重新进行绑定？
+					</div>
+					<div class="section">
+						<p>答：需要将智能门窗磁恢复出厂后，APP重新扫描出新设备进行绑定。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟安智能门窗磁的历史记录在手机端可查看多少条？
+					</div>
+					<div class="section">
+						<p>答：理论最多可查看100条历史记录，具体保存数量因手机存储空间不同会有所差异。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟安智能门窗磁恢复出厂后重新绑定能查看之前的历史记录吗？
+					</div>
+					<div class="section">
+						<p>答：可以查看的。</p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟安智能门窗磁是通过什么方式进行报警的？
+					</div>
+					<div class="section">
+						<p>答：智能门窗磁是通过APP实时推送报警信息，您也可以查询历史记录。</p>
+					</div>
+				</div>
+			</div>	
+			<div id="faq_tem_content" class="undis contentIfo">
+				<div class="faq_data">
+					<div class="header">
+						悟安S2智能温湿度感应器如何安装？
+					</div>
+					<div class="section">
+						<p>答：安装是很简单便捷的，购买的温湿度感应器附带粘贴板，直接就可以粘贴安装，安装完成后即可使用。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						温湿度感应器使用什么电池？
+					</div>
+					<div class="section">
+						<p>答：温湿度感应器使用一颗CR2450纽扣电池进行供电。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						温湿度感应器怎么恢复出厂设置？
+					</div>
+					<div class="section">
+						<p>答：请使用包装附带的针，插入Reset孔4秒以上直到设备绿灯亮起。 </p>
+					</div>
+				</div>	
+				<div class="faq_data">
+					<div class="header">
+						温湿度感应器详情页面下面的时间轴是干什么用的呢？
+					</div>
+					<div class="section">
+						<p>答：温湿度感应器以两小时为单位采集数据，形成温度曲线。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						如果设备断电了，会有什么影响吗？
+					</div>
+					<div class="section">
+						<p>答：设备断电后，温湿度采集停止。断电时间段内的温度曲线则为空白。重新上电后，温度曲线从上电时间的数据开始显示。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						如果设备离线，还能采集温湿度吗？
+					</div>
+					<div class="section">
+						<p>答：只要设备是通电状态，设备就可以进行温湿度采集。温度曲线会在设备重新连上网络之后显示出来。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						纽扣电池没电了，一般去哪里买的到？
+					</div>
+					<div class="section">
+						<p>答：可在附近五金店购买，或到天猫或者京东都可以买到CR2450纽扣电池。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						温湿度感应一般建议安装哪个位置 ，采集的数据会比较准？
+					</div>
+					<div class="section">
+						<p>答：需要探测哪个位置的温湿度，就安在相应位置即可。 </p>
+					</div>
+				</div>
+			</div>	
+			<div id="faq_infrared_content" class="undis contentIfo">			
+				<div class="faq_data">
+					<div class="header">
+						悟安S2智能红外人体感应器使用什么电池？
+					</div>
+					<div class="section">
+						<p>答：红外人体感应器使用一颗CR2450纽扣电池进行供电。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟安S2智能红外人体感应器没电了我怎么知道呢？能实时监测电量吗？
+					</div>
+					<div class="section">
+						<p>答：红外人体感应器能实时监测电量，电池剩余电量实时反馈在APP中，并提前向您的手机推送低电量告警信息。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟安S2智能红外人体感应器只能探测人体吗？
+					</div>
+					<div class="section">
+						<p>答：能发射红外的移动物体都会探测到，比如宠物等。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟安S2智能红外人体感应器探测角度和探测距离、探测间隔时间？
+					</div>
+					<div class="section">
+						<p>答：红外人体感应器探测角度是90度，探测距离是8~10米，探测间隔时间为5s。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟安S2智能红外人体感应器是通过什么方式进行报警的？
+					</div>
+					<div class="section">
+						<p>答：红外人体感应器是通过APP实时推送报警信息和历史记录查看。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟安S2智能红外人体感应器在手机APP最多可以查看多少条历史记录？
+					</div>
+					<div class="section">
+						<p>答：红外人体感应器在手机APP最多可以查看100条左右历史记录，新的探测记录会覆盖旧的记录。 </p>
+					</div>
+				</div>
+				<div class="faq_data">
+					<div class="header">
+						悟安S2智能红外人体感应器怎么恢复出厂设置？
+					</div>
+					<div class="section">
+						<p>答：请使用包装附带的针，插入Reset孔4秒以上直到设备绿灯亮起。</p>
+					</div>
+				</div>					
+			</div>	
+			<div class="returnMenuCon undis" onclick="returnMenu()">常见问题</div>
+		</div>
+		<div id="faq_main_en">
+			<div id="en_q1" class="faq_data">
+				<div class="header">
+					Q: The red light flashes when the APP is searching for wukong i8. What do we do if Wukong i8 is not found after counting down?
+				</div>
+				<div class="section">
+					<p>A: Please ensure the WiFi network frequency is 2.4G and connected with WiFi.</p>
+				</div>
+			</div>
+			<div id="en_q2" class="faq_data">
+				<div class="header">
+					Q: What to do if the air conditioning type match fails?
+				</div>
+				<div class="section">
+					<p>A: Please ensure your wireless router is connected to the Internet, then try again with your remote control pointing at Wukong i8.</p>
+				</div>
+			</div>
+			<div id="en_q3" class="faq_data">
+				<div class="header">
+					Q: What if you can not control Wukong i8 with the APP or the status is opposite?
+				</div>
+				<div class="section">
+					<p>A: Please check if there is obvious blocking between Wukong i8 and your air conditioner, or you can also contact our customer services and provide the serial number, and the picture of your remote control.</p>
+				</div>
+			</div>
+			<div id="en_q4" class="faq_data">
+				<div class="header">
+					Q: Is it must be one-one correspondence between APP and Wukong i8?
+				</div>
+				<div class="section">
+					<p>A: one Wukong i8 can be controlled by different people, and various devices may be added in iWuHome APP. </p>
+				</div>
+			</div>
+			<div id="en_q5" class="faq_data">
+				<div class="header">
+					Q: How can Wukong i8 be reset to factory configuration?
+				</div>
+				<div class="section">
+					<p>A: With power connected, long-press the reset button till the red light flashes.</p>
+				</div>
+			</div>
+			<div id="en_q6" class="faq_data">
+				<div class="header">
+					Q: What to do when I change a new air conditioner?
+				</div>
+				<div class="section">
+					<p>A: Login the App, and select “match air conditioner type”. Re-match the remote controller.</p>
+				</div>
+			</div>
+			<div id="en_q7" class="faq_data">
+				<div class="header">
+					Q: What if I change the wireless router’s password or name?
+				</div>
+				<div class="section">
+					<p>A: You need to reset the Wukong i8 to factory configuration and input the new password.</p>
+				</div>
+			</div>
+			<div id="en_q8" class="faq_data">
+				<div class="header">
+					Q: Enable the timing-start function. What kind of modes does the air conditioner run when the power is on?
+				</div>
+				<div class="section">
+					<p>A: The air conditioner will stay in the running mode that before power off.</p>
+				</div>
+			</div>
+			
+			<div id="en_q9" class="faq_data">
+				<div class="header">
+					Q: What’s the differences between the login password and device password?
+				</div>
+				<div class="section">
+					<p>A: </p>
+					<p>1. Login password, the password for mobile registration. It could be modified in the “System Settings” menu.</p>
+					<p>2. Device password, default password is 123456. It can be changed in “Match Aircon Type”.</p>
+				</div>
+			</div>
+			
+			<div id="en_q10" class="faq_data">
+				<div class="header">
+					Q: Are there any requirements on the installation position of Wukong i8?
+				</div>
+				<div class="section">
+					<p>A: The device works well when there is no blocking between the air conditioner and the device, within 5 meters is the best range.</p>
+				</div>
+			</div>
+			<div id="en_q11" class="faq_data">
+				<div class="header">
+					Q: Can Wukong i8 control the Air Conditioner when the cell-phone was using 3g or 4g？
+				</div>
+				<div class="section">
+					<p>A: Yes, You can remotely control the air conditioner under non-WiFi environment once your Wukong i8 had configured with air conditioner.</p>
+				</div>
+			</div>
+			
+			<div id="en_q12" class="faq_data">
+				<div class="header">
+					Q: How can I use the intelligent auto-on function of AC?
+				</div>
+				<div class="section">
+					<p>A: After enable the intelligent auto-on function, on your way home. If Wukong i8 detects the indoor temperature below 17 degrees, the Air-con will start auto-heating to 24 degrees; If it detects the indoor temperature higher than 30 degrees, the Air-con will start auto-cooling to 24 degrees; If it detects the indoor temperature is between 17 degrees to 30 degrees, the Wukong i8 would not execute any auto-on operation. (Please take note: In order to positioning accurately, please make sure the smart phone and Wukong i8 must be in the same local network environment at the first time to enable the intelligent auto-on function. Also the smart phone positioning function need to be enabled, otherwise, it is not sufficient. )</p>
+					<p>1. Smart phone and Wukong i8 need to be in same local network environment in order to position Wukong i8 and conduct the intelligent auto-on function.</p>
+					<p>2. If the positioning function is turned off,  it will be insufficient.(Apple GPS, Android Base Station)</p>
+					<p>3. If the APP is removed and then reinstall, the position information will be removed too. So, it requires to re-positioning with Wukong i8 under  the same local  network environment.</p>
+				</div>
+			</div>
+			<div id="en_q13" class="faq_data">
+				<div class="header">
+					Q: How to use the intelligent sleep mode?
+				</div>
+				<div class="section">
+					<p>A: The Wukong i8 has built-in sensor, and it will learn the lighting environment while the user falls into sleep. When the illumination is dimmer than sleeping lighting environment during 23:00PM to 6:00 AM, it will activate the intelligent sleep mode.</p>
+					<p>
+						Sleep mode status:
+					</p>
+					<p>1. The air conditioner will adjust to low fan mode. </p>
+					<p>2. The air conditioner will reduce two degrees under user’s preset temperature, when indoor temperature is beyond 28 degrees.</p>
+					<p>3. The AC will auto increase two degrees when the indoor temperature is below 20 degrees.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+FAQ.js内容：
+//获取地址栏参数
+function getUrlParam(name){
+	var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);
+	if (r!=null) return unescape(r[2]); return null;
+}
+function loadType(){
+	if(getUrlParam("language")=="engligsh" || getUrlParam("language")=="english"){
+		document.getElementById("faq_main_en").style.display="block"; 
+	}else{
+		document.getElementById("faq_main_ch").style.display="block"; 
+		
+		var urlQ = window.location.hash;
+		
+		if(urlQ){
+			lookProbrem("wukongMin");
+		}
+	}
+	
+	/* var hash = window.location.hash;
+	$("body,html").animate({scrollTop:$(hash).offset().top}); */
+}
+function lookUpProbrem(){
+	var ul = $("#wukongProbrem>ul");
+	if(ul.is(":hidden")){
+		ul.show();
+	}else{
+		ul.hide();
+	}
+}
+function lookProbrem(transType){
+	$("#faq_menu,.contentIfo").hide();
+	switch(transType){
+		case "app":
+			$("#faq_app_content").show();
+		break;
+		case "search":
+			$("#faq_search_content").show();
+		break;
+		case "wukongMin":
+			$("#faq_wukong_min_content").show();
+		break;
+		case "wukongMax":
+			$("#faq_wukong_max_content").show();
+		break;
+		case "wulian":
+			$("#faq_wulian_content").show();
+		break;
+		case "wuanMgt":
+			$("#faq_magnet_content").show();
+		break;	
+		case "wuanTem":
+		$("#faq_tem_content").show();
+		break;
+		case "wuanIfd":
+			$("#faq_infrared_content").show();
+		break;			
+		case "wuneng":
+			$("#faq_wuneng_content").show();
+		break;
+	}
+	$(".returnMenuCon").show();
+}
+function returnMenu(){
+	$(".contentIfo,.returnMenuCon").hide();
+	$("#faq_menu").show();
+}
+window.onload=loadType;
