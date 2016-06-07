@@ -171,3 +171,140 @@ $('#elem')
 $elem.hide();
 $elem.html('bla');
 $elem.otherStuff();
+
+
+ 检测浏览器
+ 注: 在版本jQuery 1.4中，$.support 替换掉了$.browser 变量。
+ 1.       $(document).ready(function() {   
+
+2.       // Target Firefox 2 and above   
+
+3.       if ($.browser.mozilla && $.browser.version >= "1.8" ){   
+
+4.           // do something   
+
+5.       }   
+
+6.         
+
+7.       // Target Safari   
+
+8.       if( $.browser.safari ){   
+
+9.           // do something   
+
+10.   }   
+
+11.     
+
+12.   // Target Chrome   
+
+13.   if( $.browser.chrome){   
+
+14.       // do something   
+
+15.   }   
+
+16.     
+
+17.   // Target Camino   
+
+18.   if( $.browser.camino){   
+
+19.       // do something   
+
+20.   }   
+
+21.     
+
+22.   // Target Opera   
+
+23.   if( $.browser.opera){   
+
+24.       // do something   
+
+25.   }   
+
+26.     
+
+27.   // Target IE6 and below   
+
+28.   if ($.browser.msie && $.browser.version <= 6 ){   
+
+29.       // do something   
+
+30.   }   
+
+31.     
+
+32.   // Target anything above IE6   
+
+33.   if ($.browser.msie && $.browser.version > 6){   
+
+34.       // do something   
+
+35.   }   
+
+36.   });  
+
+
+jQuery延时加载功能
+1.       $(document).ready(function() {   
+
+2.          window.setTimeout(function() {   
+
+3.            // do something   
+
+4.          }, 1000);   
+
+5.       });  
+
+
+
+使元素居屏幕中间位置
+1.       $(document).ready(function() {   
+
+2.         jQuery.fn.center = function () {   
+
+3.             this.css("position","absolute");   
+
+4.             this.css("top", ( $(window).height() - this.height() ) / 2+$(window).scrollTop() + "px");   
+
+5.             this.css("left", ( $(window).width() - this.width() ) / 2+$(window).scrollLeft() + "px");   
+
+6.             return this;   
+
+7.         }   
+
+8.         $("#id").center();   
+
+9.       });  
+
+
+
+页面样式切换
+1.       $(document).ready(function() {   
+
+2.           $("a.Styleswitcher").click(function() {   
+
+3.               //swicth the LINK REL attribute with the value in A REL attribute   
+
+4.               $('link[rel=stylesheet]').attr('href' , $(this).attr('rel'));   
+
+5.           });   
+
+6.       // how to use   
+
+7.       // place this in your header   
+
+8.       <LINK href="default.css" type=text/css rel=stylesheet>   
+
+9.       // the links   
+
+10.   <A class=Styleswitcher href="#" rel=default.css>Default Theme</A>   
+
+11.   <A class=Styleswitcher href="#" rel=red.css>Red Theme</A>   
+
+12.   <A class=Styleswitcher href="#" rel=blue.css>Blue Theme</A>   
+
+13.   }); 
