@@ -1,0 +1,75 @@
+首先讲解一下js中preventDefault和stopPropagation两个方法的区别：
+preventDefault方法的起什么作用呢？我们知道比如<a href="http://www.baidu.com">百度</a>,这是html中最基础的东西，起的作用就是点击百度链接到http://www.baidu.com,这是属于<a>标签的默认行为，而preventDefault方法就是可以阻止它的默认行为的发生而发生其他的事情。看一段代码大家就明白了：
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JS阻止链接跳转</title>
+<script type="text/javascript">
+function stopDefault( e ) {
+if ( e && e.preventDefault )
+   e.preventDefault();
+    else
+   window.event.returnValue = false;
+
+    return false;
+}
+</script>
+</head>
+<body>
+<a href="http://www.baidu.com" id="testLink">百度</a>
+<script type="text/javascript">
+var test = document.getElementById('testLink');
+test.onclick = function(e) {
+   alert('我的链接地址是：' + this.href + ', 但是我不会跳转。');
+   stopDefault(e);
+}
+</script>
+</body>
+</html>
+
+此时点击百度链接，不会打开http://www.baidu.com，而只是弹出一个alert对话框。
+
+preventDefault方法讲解到这里，stopPropagation方法呢？讲stopPropagation方法之前必需先给大家讲解一下js的事件代理。
+
+事件代理用到了两个在JavaSciprt事件中常被忽略的特性：事件冒泡以及目标元素。当一个元素上的事件被触发的时候，比如说鼠标点击了一个按钮，同样的事件将会在那个元素的所有祖先元素中被触发。这一过程被称为事件冒泡；这个事件从原始元素开始一直冒泡到DOM树的最上层。对任何一个事件来说，其目标元素都是原始元素，在我们的这个例子中也就是按钮。目标元素它在我们的事件对象中以属性的形式出现。使用事件代理的话我们可以把事件处理器添加到一个元素上，等待事件从它的子级元素里冒泡上来，并且可以很方便地判断出这个事件是从哪个元素开始的。
+
+stopPropagation方法就是起到阻止js事件冒泡的作用，看一段代码。
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xHTML1/DTD/xHTML1-transitional.dtd">
+<HTML XMLns="http://www.w3.org/1999/xHTML" lang="gb2312">
+<head>
+<title> 阻止JS事件冒泡传递（cancelBubble 、stopPropagation）</title>
+<meta name="keywords" content="JS,事件冒泡,cancelBubble,stopPropagation" />
+<script>
+function doSomething (obj,evt) {
+ alert(obj.id);
+ var e=(evt)?evt:window.event;
+ if (window.event) {
+  e.cancelBubble=true;// ie下阻止冒泡
+ } else {
+  //e.preventDefault();
+  e.stopPropagation();// 其它浏览器下阻止冒泡
+ }
+}
+</script>
+</head>
+<body>
+<div id="parent1" onclick="alert(this.id)" style="width:250px;background-color:yellow">
+ <p>This is parent1 div.</p>
+ <div id="child1" onclick="alert(this.id)" style="width:200px;background-color:orange">
+  <p>This is child1.</p>
+ </div>
+ <p>This is parent1 div.</p>
+</div>
+<br />
+<div id="parent2" onclick="alert(this.id)" style="width:250px;background-color:cyan;">
+ <p>This is parent2 div.</p>
+ <div id="child2" onclick="doSomething(this,event);" style="width:200px;background-color:lightblue;">
+  <p>This is child2. Will bubble.</p>
+ </div>
+ <p>This is parent2 div.</p>
+</div>
+</body>
+</HTML> 
