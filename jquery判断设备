@@ -1,0 +1,41 @@
+jquery判断设备，当前是移动端还是PC端。两种方法：
+
+首先，只判断是否是用 移动设备 浏览的：
+// Mobile      这里是只有不再 移动设备 上访问时，才给相应元素加上 mouseenter  和  mouseleave  事件。
+ if (!navigator.userAgent.match(/mobile/i)) {
+  
+  $('.nav-dots span').mouseenter(function(){
+   $(this).css('background-color', 'rgba(0, 0, 0, 0.2) !important');
+  });//这个可以换成自己想要达成的事件目的
+  
+  $('.nav-dots span').mouseleave(function(){
+   $(this).css('background-color', 'rgba(255, 255, 255, 0.2) !important');
+  });//这个可以换成自己想要达成的事件目的
+
+ }
+ 
+---------------------------------------------------------------------------------------------------------
+第二，需要得到详细的移动设备的类型：
+$(document).ready(function() {   
+    var isMobile = {  
+    Android: function() {  
+        return navigator.userAgent.match(/Android/i) ? true : false;  
+    },  
+    BlackBerry: function() {  
+        return navigator.userAgent.match(/BlackBerry/i) ? true : false;  
+    },  
+    iOS: function() {  
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;  
+    },  
+    Windows: function() {  
+        return navigator.userAgent.match(/IEMobile/i) ? true : false;  
+    },  
+    any: function() {  
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  
+    }  
+};  
+    if( isMobile.any() )   
+    {  
+        $('.main_header').hide(); //可换成自己想要达成的事件或目的                        
+    }  
+}); 
