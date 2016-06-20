@@ -2,10 +2,10 @@
 
 /*nav fold*/
 $("#fold").on("click",function(){
-    if($("#fold ul").is(":hidden")){
+    if($("#fold ul").is(":hidden")){//判断是否隐藏，若隐藏就显示
         $("#fold ul").show("1500");
     }else{
-        $("#fold ul").hide("1500");
+        $("#fold ul").hide("1500");//否则就隐藏
     }
 })
 
