@@ -1,0 +1,24 @@
+文章网址：http://www.discuz.net/thread-1634979-1-1.html
+
+看到不少站长朋友们已经在陆陆续续的使用Discuz!X 建设新站或者升级老站，然后自己也在本地试着安装了一个玩玩。
+在新发布的Discuz!X 中，系统默认的用户名长度仍然是 3-15字节，但有一些网站可能会因为各种原因需要将用户名长度的限制做一些修改。所以结合之前的一些经验，完成了修改 注册用户名长度 的办法详细如下：
+
+第一步，在网站 uc_client\model 目录下的 user.php文件中，找到如下代码：
+if($len > 15 || $len < 3 || preg_match("/\s+|^c:\\con\\con|[%,\*\"\s\<\>\&]|$guestexp/is", $username))
+将其中的 15 修改为你所要的最大数字，将 3 修改为你所要的 最小数字。
+
+比如我们站就是在 4-8之间那么就可以修改为：
+if($len > 8 || $len < 4 || preg_match("/\s+|^c:\\con\\con|[%,\*\"\s\<\>\&]|$guestexp/is", $username)) 
+
+第二步，在网站 template\default\member 目录下的 register.htm 文件中，找到如下代码：
+if(unlen < 3 || unlen > 15) {
+同样按照上一步的数字修改即可，比如修改为：
+if(unlen < 4 || unlen > 8) {
+
+第三步，在网站 source\language\forum 目录下的 lang_template.php 文件中找到如下代码：
+'register_profile_username_toolong' => '用户名超过 15 个字符',
+'register_profile_profile_username_tooshort' => '用户名小于3个字符',
+
+继续按照上面的数字修改即可，比如可以修改为：
+'register_profile_username_toolong' => '用户名超过 8 个字符',
+'register_profile_profile_username_tooshort' => '用户名小于4个字符',
