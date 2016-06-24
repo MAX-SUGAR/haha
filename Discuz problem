@@ -2,4 +2,23 @@
 文章网址：http://www.51php.com/discuz/16163.html
 
 二、 完美解决x2注册页面出现‘抱歉，你输入的用户名小于3个字符问题’的两种方法：
-文章网址：http://blog.csdn.net/luxiaoyu_sdc/article/details/7678690
+文章网址：http://blog.csdn.net/luxiaoyu_sdc/article/details/7678690(这篇文章可能没用)
+
+三、Discuz! X3.2论坛注册提示“抱歉，您输入的用户名小于3个字符”解决方法：
+文章网址：http://www.510ym.com/thread-2499-1-1.html
+
+出现这样的情况首先可能是UC通讯的问题，检查UC里面应用是否通讯正常，通讯正常的情况下做以下操作
+
+1.打开“根目录/template/default/member/register.htm”这个文件。
+
+2.在文件中搜索“id=”{$this->setting['reginput']”，会找到四个地方，分别是：
+1）<td><input type=”text” id=”{$this->setting['reginput']['username']}” name=”" …
+2）<td><input type=”password” id=”{$this->setting['reginput']['password']}” name=”" …
+3）<td><input type=”password” id=”{$this->setting['reginput']['password2']}” name=”" …
+4）<td><input type=”text” id=”{$this->setting['reginput']['email']}” name=”" …
+将四处id的值（如{$this->setting['reginput']['username']}）分别拷贝给对应的name。
+3.这四处input中，name都是”"，所以在填写完注册信息后，submit到后台去时，后台通过name去拿填写的数据会拿不到任何东西。而注册前的验证会检查注册信息是否完备，第一个input是username，当它检查到输入内容为空时，当然会提示“抱歉，您输入的用户名小于3个字符”。
+
+4.这四处应该都要改，如果只是改提示的“用户名”，其他不动，猜测会有“密码为空或者包含非法字符”之类的提示，有兴趣的朋友可以试一下。
+
+5.我注册第一个用户时没有出错，在修改了后台某些配置后才出现这个问题，有网友说在原来的register.js中会将input空间的name设置成和id一样的值，但现在不起作用了，这个问题就产生了。
