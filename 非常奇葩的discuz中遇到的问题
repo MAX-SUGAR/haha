@@ -1,0 +1,14 @@
+我这里记录一下。
+当我要达到某中目的改动文件时，只是暂时改动，达到目的后会还原回去，但是发现discuz论坛上不管是哪个页面，顶部会突然出来一个空隙，好像不注意也不明显，但是就是这个缝隙，导致完全不能登陆，网上没有任何记录此原因的解决方法，最后我自己发现原来我改动过的文件（一般只是注释掉为达到某中目的，最终会还原的），尽管最终还原得一模一样都不行。导致有缝隙出现，然后不能登录，都是动了这些文件。必须完全不能动，动了还原都不行。
+
+解决方法只有如果有备份，得用相对应的文件覆盖掉，没动过的。就可以了。
+
+我现在记录几个不能动的，以免以后动了出问题：
+
+bbs/source/function/function_core.php
+
+bbs/source/class/discuz/discuz_application.php
+
+bbs/template/default/touch/common/header.htm
+
+bbs/static/js/mobile/common.js
