@@ -1,0 +1,75 @@
+两种方法：
+
+第一种方法：
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #a{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">
+        sdvcdvf
+    </div>
+</body>
+</html>
+
+
+第二种方法（使用js操作div的属性为下面这样即可实现居中）：
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #a{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            position: fixed;
+
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var a = document.getElementById("a");
+            var Height=document.documentElement.clientHeight;//取得浏览器页面可视区域的宽度
+            var Width=document.documentElement.clientWidth;//取得浏览器页面可视区域的宽度
+            var gao1 = a.offsetHeight;
+            var gao2 = a.offsetWidth;
+            var Sgao1= (Height - gao1)/2+"px";
+            var Sgao2= (Width - gao2)/2+"px";
+            a.style.top=Sgao1;
+            a.style.left=Sgao2;
+        }
+    </script>
+</head>
+<body>
+    <div id="a">
+        sdvcdvf
+    </div>
+</body>
+</html>
+
+
