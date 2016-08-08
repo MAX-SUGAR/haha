@@ -1,0 +1,11 @@
+popup();
+function popup(){
+var boarddiv = $("<div class='hehehe' style='background:gray;width:27%;height:28%;background:rgba(0,0,0,0.7);z-index:9999;position:fixed;top:0;margin:20% 33% 0 35%;padding:2% 3% 0 3%;font-size:16px;line-height:30px'><button type='button' style='position:absolute;bottom:5%; right:5%;'>知道了</button>亲爱的客户，2016年7月30日（周六）8点至2016年7月31日（周日）20:00期间本公司400电话系统进行升级维护，期间对您造成的不便深表歉意。如有售后问题或其他事宜，您可加入官方QQ粉丝群（188015937）与我们联系。感谢您的支持，谢谢！</div>");
+
+$(window).load(function(){ 	
+	$(document.body).append(boarddiv);
+        $("button").click(function(){
+	   $(boarddiv).remove();   
+      })
+});
+}
